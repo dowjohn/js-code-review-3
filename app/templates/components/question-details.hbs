@@ -1,0 +1,8 @@
+{{question.question}} asked by {{question.questioner}}
+
+Answers:
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{answer.answerer}}'s {{answer.answerContent}}</li>
+  {{/each}}
+</ul>
