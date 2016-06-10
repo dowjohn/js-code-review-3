@@ -5,7 +5,12 @@ module.exports = function(environment) {
     modulePrefix: 'js-code-review-3',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://js-code-review-3.firebaseio.com',
+    firebase: {
+      apiKey: "AIzaSyC5LUkLzGP17-by1qXFIJZpTtSm7w7fb7M",
+      authDomain: "js-code-review-3.firebaseapp.com",
+      databaseURL: "https://js-code-review-3.firebaseio.com",
+      storageBucket: "js-code-review-3.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
