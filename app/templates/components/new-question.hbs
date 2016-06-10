@@ -1,0 +1,21 @@
+<h1>New Question</h1>
+<div>
+    <form>
+        <div class="form-group">
+            <label for="question">Question:</label>
+            {{input value=question id="question"}}
+        </div>
+
+        <div class="form-group">
+            <label for="questioner">Your Name:</label>
+            {{input value=questioner id="questioner"}}
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Supplementary info:</label>
+            {{input value=notes id="notes"}}
+        </div>
+
+        <button {{action 'save'}}>Save Question</button>
+    </form>
+</div>
