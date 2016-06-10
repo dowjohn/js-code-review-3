@@ -7,6 +7,7 @@ export default Ember.Component.extend({
             this.set('updateQuestionForm', true);
         },
         updateQuestion(question) {
+
             var params = {
                 question: this.get('question'),
                 questioner: this.get('questioner'),
