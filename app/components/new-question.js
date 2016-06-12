@@ -6,8 +6,8 @@ export default Ember.Component.extend({
 
         save() {
             var params = {
-                question: this.get('question'),
-                questioner: this.get('questioner'),
+                ask: this.get('question'),
+                asker: this.get('questioner'),
                 notes: this.get('notes')
             };
             this.sendAction('save', params);

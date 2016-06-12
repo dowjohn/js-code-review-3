@@ -1,9 +1,8 @@
 <div class="row">
     <div class="col-sm-9">
-        {{#link-to 'question' question.id}}{{question.question}}<br>
-        asked by: {{question.questioner}}{{/link-to}}
+        {{#link-to 'question' question.id}}{{question.ask}}<br>
+        asked by: {{question.asker}}{{/link-to}}
         <br>
         <br>
-        {{update-question question=question update="update"}}
     </div>
 </div>
