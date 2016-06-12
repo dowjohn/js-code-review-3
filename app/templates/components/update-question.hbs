@@ -3,17 +3,17 @@
       <form>
           <div class="form-group">
               <label for="ask">Your Question:</label>
-              {{input value=ask id="questionUpdate" placeholder=question.ask}}
+              {{input value=ask id="ask" placeholder=question.ask}}
           </div>
 
           <div class="form-group">
               <label for="asker">Your Name:</label>
-              {{input value=asker id="questionerUpdate" placeholder=question.asker}}
+              {{input value=asker id="asker" placeholder=question.asker}}
           </div>
 
           <div class="form-group">
               <label for="notes">Supplementary info:</label>
-              {{input value=notes id="notesUpdate" placeholder=question.notes}}
+              {{input value=notes id="notes" placeholder=question.notes}}
           </div>
 
         <button {{action 'update' question}}>Update</button>
